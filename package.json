@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "http-proxy-middleware": "^2.0.1",
     "mongod": "^2.0.0",
     "mongoose": "^6.1.6"
   },

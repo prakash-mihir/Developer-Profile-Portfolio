@@ -42,9 +42,8 @@ class Dev extends Component {
 
         return (
         <div>
-            <h1>My Dev(s)</h1>
-            <Input getDevs={this.getDevs} />
             <ListDev devs={devs} deleteDev={this.deleteDev} />
+            <Input getDevs={this.getDevs} />
         </div>
         );
     }
