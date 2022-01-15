@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/workat-hiring-test/static/css/main.eff18caa.css",
-    "main.js": "/workat-hiring-test/static/js/main.a55983e4.js",
+    "main.js": "/workat-hiring-test/static/js/main.e998658c.js",
     "static/js/787.7240e568.chunk.js": "/workat-hiring-test/static/js/787.7240e568.chunk.js",
     "static/media/undraw_dev_productivity_umsq_1.png": "/workat-hiring-test/static/media/undraw_dev_productivity_umsq_1.796486ed916b2fda8ec2.png",
     "index.html": "/workat-hiring-test/index.html",
     "static/media/search-24px.svg": "/workat-hiring-test/static/media/search-24px.bc2178ae2f929aec5f0979e09110f358.svg",
     "static/media/account_circle-24px.svg": "/workat-hiring-test/static/media/account_circle-24px.99b6c0a3103b0704d67c.svg",
     "main.eff18caa.css.map": "/workat-hiring-test/static/css/main.eff18caa.css.map",
-    "main.a55983e4.js.map": "/workat-hiring-test/static/js/main.a55983e4.js.map",
+    "main.e998658c.js.map": "/workat-hiring-test/static/js/main.e998658c.js.map",
     "787.7240e568.chunk.js.map": "/workat-hiring-test/static/js/787.7240e568.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eff18caa.css",
-    "static/js/main.a55983e4.js"
+    "static/js/main.e998658c.js"
   ]
 }
