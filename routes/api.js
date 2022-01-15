@@ -15,6 +15,27 @@ router.get('/devs', (req, res, next) => {
         });
 });
 
+router.get('/devs/search', (req, res, next) => {
+    console.log('searching for devs');
+    const search = req.query.github_id;
+    const regex = new RegExp(search, 'i');
+    Developer.find({
+            $or: [{
+                name: regex
+            }, {
+                github_id: regex
+            }]
+        })
+        .then(developers => {
+            res.status(200).json(developers);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err
+            });
+        });
+});
+
 router.post('/devs', (req, res, next) => {
     // create a developer with the passed in data
     const developer = new Developer({

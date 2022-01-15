@@ -95,6 +95,13 @@
   width: 100%;
 }
 
+.searchBarIcon button {
+  background: #D0CDE1;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
 /* SEARCH BAR CSS ENDS */
 
 /* FORM CSS STARTS */

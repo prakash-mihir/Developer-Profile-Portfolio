@@ -13,7 +13,7 @@ class Dev extends Component {
         this.getDevs();
     }
 
-    getDevs = () => {
+    getDevs = (e) => {
         axios
         .get('/api/devs')
         .then((res) => {
@@ -43,8 +43,7 @@ class Dev extends Component {
 
         return (
         <div>
-            <SearchBar/>
-            <ListDev devs={devs} deleteDev={this.deleteDev} />
+            <SearchBar devs={devs} getDevs={this.getDevs}/>
             <Input getDevs={this.getDevs} />
         </div>
         );
