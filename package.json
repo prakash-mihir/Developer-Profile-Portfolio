@@ -6,11 +6,14 @@
   "scripts": {
     "start": "node server.js",
     "start-watch": "nodemon server.js",
-    "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+    "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Aditya Prakash",
   "license": "ISC",
+  "homepage": "https://adityaprakash.tech/workat-hiring-test/",
   "dependencies": {
     "express": "^4.17.2",
     "http-proxy-middleware": "^2.0.1",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.15"
   }
 }
