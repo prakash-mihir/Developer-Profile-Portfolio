@@ -19,6 +19,10 @@ class SearchBar extends Component {
     };
 
     componentDidMount() {
+        this.listDevs();
+    }
+
+    listDevs = () => {
         axios
         .get('/api/devs')
         .then((res) => {
@@ -30,7 +34,7 @@ class SearchBar extends Component {
             }
         })
         .catch((err) => console.log(err));
-    }
+    };
 
 
     handleChange = (e) => {
@@ -62,6 +66,7 @@ class SearchBar extends Component {
                 </div>
             </div>
             <ListDev devs={this.state.devs} />
+            <hr></hr>
             </div>
         );
     }

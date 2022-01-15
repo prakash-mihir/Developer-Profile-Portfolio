@@ -13,10 +13,10 @@ class Input extends Component {
         document.getElementById('devList').style = 'opacity: 0.5';
         return (
             <div className='devFormOverlay'> 
+            <hr></hr>
             <form id = "add-dev" className='devForm'>
                 <div className='devFormContent'>
                     <p>Add developer profile</p>
-                    <hr></hr>
                     <label>Github*</label>
                     <input
                         type="text"

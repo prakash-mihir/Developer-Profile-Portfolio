@@ -104,6 +104,36 @@
 
 /* SEARCH BAR CSS ENDS */
 
+/* SEARCH LIST CSS STARTS */
+#devListContainer{
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#devList {
+  margin-left: 200px;
+  column-count: 2;
+  list-style-type: none;
+}
+
+#devList li {
+  background: url('res/Icons_Illustrations/account_circle-24px.svg') no-repeat left;
+  background-size: 100px 100px;
+  font-size: 36px;
+  line-height: 100px;
+  color: #9F8E63;
+  height: 100px;
+  padding-left: 148px;
+}
+
+/* SEARCH LIST CSS ENDS */
+
+/* ADD DEV PANEL STARTS */
+
+/* ADD DEV PANEL ENDS */
+
 /* FORM CSS STARTS */
 
 .devForm {
@@ -135,4 +165,10 @@
 
 input:focus {
   outline: none;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }

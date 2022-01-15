@@ -55,21 +55,61 @@ router.post('/devs', (req, res, next) => {
         medium_id: req.body.medium_id,
         repos: req.body.repos
     });
-    // save the developer
-    developer.save()
-        .then(result => {
-            console.log(result);
-            res.status(201).json({
-                message: 'Developer created',
-                createdDeveloper: developer
-            });
+    // check if the developer already exists
+    Developer.findOne({
+            github_id: req.body.github_id
         })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json({
-                error: err
-            });
-        });
+        .then(result => {
+            if (result) {
+                // overwrite the existing developer
+                Developer.findOneAndUpdate({
+                        github_id: req.body.github_id
+                    }, {
+                        $set: {
+                            avatar_url: req.body.avatar_url,
+                            name: req.body.name,
+                            company: req.body.company,
+                            blog: req.body.blog,
+                            location: req.body.location,
+                            email: req.body.email,
+                            bio: req.body.bio,
+                            github_id: req.body.github_id,
+                            linkedin_id: req.body.linkedin_id,
+                            codechef_id: req.body.codechef_id,
+                            hackerrank_id: req.body.hackerrank_id,
+                            twitter_id: req.body.twitter_id,
+                            medium_id: req.body.medium_id,
+                            repos: req.body.repos
+                        }
+                    }, {
+                        new: true
+                    })
+                    .then(result => {
+                        res.status(200).json(result);
+                    })
+                    .catch(err => {
+                        res.status(500).json({
+                            error: err
+                        });
+                    });
+            } else {
+                // save the developer
+                developer.save()
+                    .then(result => {
+                        console.log(result);
+                        res.status(201).json({
+                            message: 'Developer created',
+                            createdDeveloper: developer
+                        });
+                    })
+                    .catch(err => {
+                        console.log(err);
+                        res.status(500).json({
+                            error: err
+                        });
+                    });
+            }
+        })
 });
 
 router.get('/devs/:id', (req, res, next) => {

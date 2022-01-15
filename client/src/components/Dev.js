@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Input from './Input';
-import ListDev from './ListDev';
 import SearchBar from './SearchBar';
 
 class Dev extends Component {
