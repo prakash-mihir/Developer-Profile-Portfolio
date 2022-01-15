@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Input from './Input';
 import ListDev from './ListDev';
+import SearchBar from './SearchBar';
 
 class Dev extends Component {
     state = {
@@ -42,6 +43,7 @@ class Dev extends Component {
 
         return (
         <div>
+            <SearchBar/>
             <ListDev devs={devs} deleteDev={this.deleteDev} />
             <Input getDevs={this.getDevs} />
         </div>

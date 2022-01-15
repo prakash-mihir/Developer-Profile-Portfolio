@@ -87,10 +87,8 @@ class Input extends Component {
     };
 
     render() {
-        let { github_id } = this.state;
         return (
             <div>
-                <input type="text" onChange={this.handleChange} value={github_id} />
                 <button onClick={() => this.setState({showForm: true, shouldBlur: true})}>Add developer info</button>
                 {this.state.showForm ? this.showForm() : null}
             </div>
