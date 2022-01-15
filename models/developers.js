@@ -12,7 +12,6 @@ const DeveloperSchema = new Schema({
     },
     name: {
         type: String,
-        required: true
     },
     company: {
         type: String,
@@ -25,7 +24,6 @@ const DeveloperSchema = new Schema({
     },
     email: {
         type: String,
-        required: true
     },
     bio: {
         type: String,

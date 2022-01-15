@@ -113,7 +113,22 @@ router.post('/devs', (req, res, next) => {
 });
 
 router.get('/devs/:id', (req, res, next) => {
-
+    Developer.findById(req.params.id)
+        .then(developer => {
+            if (developer) {
+                res.status(200).json(developer);
+            } else {
+                res.status(404).json({
+                    message: 'No such developer'
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err
+            });
+        }
+    );
 });
 
 router.delete('/devs/:id', (req, res, next) => {
