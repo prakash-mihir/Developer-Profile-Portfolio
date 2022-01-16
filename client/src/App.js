@@ -12,7 +12,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route exact path='/dev' element={<Header />} />
+          <Route exact path='/dev/:id' element={<Header />} />
         </Routes>
       </Router>
       <Footer/>

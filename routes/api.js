@@ -36,6 +36,22 @@ router.get('/devs/search', (req, res, next) => {
         });
 });
 
+router.get('/devs/search/:id', (req, res, next) => {
+    // the id passed in will be the github_id
+    const id = req.params.id;
+    Developer.find({
+            github_id: id
+        })
+        .then(developers => {
+            res.status(200).json(developers);
+        })
+        .catch(err => {
+            res.status(500).json({
+                error: err
+            });
+        });
+});
+
 router.post('/devs', (req, res, next) => {
     // create a developer with the passed in data
     const developer = new Developer({
@@ -110,25 +126,6 @@ router.post('/devs', (req, res, next) => {
                     });
             }
         })
-});
-
-router.get('/devs/:id', (req, res, next) => {
-    Developer.findById(req.params.id)
-        .then(developer => {
-            if (developer) {
-                res.status(200).json(developer);
-            } else {
-                res.status(404).json({
-                    message: 'No such developer'
-                });
-            }
-        })
-        .catch(err => {
-            res.status(500).json({
-                error: err
-            });
-        }
-    );
 });
 
 router.delete('/devs/:id', (req, res, next) => {
