@@ -4,6 +4,11 @@ import axios from 'axios';
 class Input extends Component {
     state = {
         github_id: '',
+        linkedin_id: '',
+        codechef_id: '',
+        hackerrank_id: '',
+        twitter_id: '',
+        medium_id: '',
         showForm: false,
     };
 
@@ -77,7 +82,13 @@ class Input extends Component {
     };
 
     addDev = () => {
-        const dev = { github_id: this.state.github_id };
+        const dev = { github_id: this.state.github_id,
+            linkedin_id: this.state.linkedin_id,
+            codechef_id: this.state.codechef_id,
+            hackerrank_id: this.state.hackerrank_id,
+            twitter_id: this.state.twitter_id,
+            medium_id: this.state.medium_id,
+        };
 
         if (dev.github_id && dev.github_id.length > 0) {
             axios.post('/api/devs', dev)
