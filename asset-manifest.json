@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/workat-hiring-test/static/css/main.6e8eacb2.css",
-    "main.js": "/workat-hiring-test/static/js/main.433ea676.js",
+    "main.js": "/workat-hiring-test/static/js/main.b46fabc0.js",
     "static/js/787.7240e568.chunk.js": "/workat-hiring-test/static/js/787.7240e568.chunk.js",
     "static/media/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png": "/workat-hiring-test/static/media/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.fa0accc1440b6a70e7b3.png",
     "static/media/iconfinder_github_317712.png": "/workat-hiring-test/static/media/iconfinder_github_317712.b392be3f24c60d24875b.png",
@@ -17,11 +17,11 @@
     "static/media/location_on-24px.svg": "/workat-hiring-test/static/media/location_on-24px.56c49cd829e0c2afe443f10407916a03.svg",
     "static/media/north_east-24px.svg": "/workat-hiring-test/static/media/north_east-24px.94737adaae534812c2383259ed39399a.svg",
     "main.6e8eacb2.css.map": "/workat-hiring-test/static/css/main.6e8eacb2.css.map",
-    "main.433ea676.js.map": "/workat-hiring-test/static/js/main.433ea676.js.map",
+    "main.b46fabc0.js.map": "/workat-hiring-test/static/js/main.b46fabc0.js.map",
     "787.7240e568.chunk.js.map": "/workat-hiring-test/static/js/787.7240e568.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e8eacb2.css",
-    "static/js/main.433ea676.js"
+    "static/js/main.b46fabc0.js"
   ]
 }
