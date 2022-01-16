@@ -302,6 +302,90 @@
   text-decoration: none;
 }
 
+/* NAVBAR CSS ENDS */
+
+/* ABOUT PANEL CSS STARTS */
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.pfp{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.info-container {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.name {
+  font-size: 48px;
+  line-height: 65px;
+  margin-bottom: 30px;
+  color: #3F3D56;
+}
+
+.bio {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 30px;
+  color: #3F3D56;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 30px;
+}
+
+.link-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 14px;
+}
+
+.link-container {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  /* align-content: center; */
+  margin-bottom: 30px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 18px;
+}
+
+.link-text {
+  margin-top: 5px;
+  margin-left: 11px;
+}
+
+.link-text a {
+  text-decoration: none;
+}
+
+/* ABOUT PANEL CSS ENDS */
+
 /* DEV INFO PAGE CSS ENDS */
 
 
