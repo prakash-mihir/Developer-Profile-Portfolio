@@ -6,6 +6,7 @@ class ListDev extends Component {
         return (
             <div id="devListContainer">
                 <ul id="devList">
+                    
                 {devs && devs.length > 0 ? (
                     devs.map((dev) => {
                         return (
@@ -15,7 +16,7 @@ class ListDev extends Component {
                         );
                     })
                 ) : (
-                    <li>No dev(s) left</li>
+                    <p></p>
                 )}
                 </ul>
             </div>

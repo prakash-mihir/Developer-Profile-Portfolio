@@ -261,6 +261,37 @@
 }
 /* FOOTER CSS ENDS */
 
+/* DEV INFO PAGE CSS STARTS */
+
+/* NAVBAR CSS STARTS */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #3F3D56;
+  border-bottom: 1px solid #D0CDE1;
+}
+
+.navbar p {
+  font-size: 24px;
+  margin-left: 34px;
+  color: #FFFFFF;
+}
+
+.navbar a {
+  font-size: 24px;
+  margin-right: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* DEV INFO PAGE CSS ENDS */
+
+
 input:focus {
   outline: none;
 }

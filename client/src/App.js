@@ -1,15 +1,21 @@
 import React from 'react';
-import Dev from './components/Dev';
 import Landing from './components/Landing';
-import WelcomeText from './components/WelcomeText';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Header from './components/devPage/Header';
 
 const App = () => {
   return (
     <div className="App">
-      <Landing />
-      <WelcomeText />
-      <Dev />
+      {/* <Landing /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route exact path='/dev' element={<Header />} />
+        </Routes>
+      </Router>
+      <Footer/>
     </div>
   );
 };

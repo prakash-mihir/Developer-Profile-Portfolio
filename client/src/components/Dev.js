@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Input from './Input';
 import SearchBar from './SearchBar';
-import Footer from './Footer';
 
 class Dev extends Component {
     state = {
@@ -45,7 +44,6 @@ class Dev extends Component {
         <div>
             <SearchBar devs={devs} getDevs={this.getDevs}/>
             <Input getDevs={this.getDevs} />
-            <Footer/>
         </div>
         );
     }

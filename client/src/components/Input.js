@@ -98,9 +98,12 @@ class Input extends Component {
     };
 
     render() {
+        if(this.state.devs === []) {
+            document.getElementById('message').innerHTML = 'No developers added';
+        }
         return (
             <div className='addDevPanel'>
-                <div className='text'>Could not find what you were looking for?</div>
+                <div className='text' id="message">Could not find what you were looking for?</div>
                 <button className="addDevButton" id="addDevButton" onClick={() => this.setState({showForm: true, shouldBlur: true})}>Add developer info</button>
                 {this.state.showForm ? this.showForm() : null}
             </div>
