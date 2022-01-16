@@ -13,9 +13,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Developer
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err));
 
-mongoose.connect(process.env.DB, { useNewUrlParser: true })
-    .then(() => console.log(`Database connected successfully`))
-    .catch((err) => console.log(err));
+// mongoose.connect(process.env.DB, { useNewUrlParser: true })
+//     .then(() => console.log(`Database connected successfully`))
+//     .catch((err) => console.log(err));
 
 mongoose.Promise = global.Promise; // use node's promise
 
