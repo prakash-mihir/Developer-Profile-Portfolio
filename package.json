@@ -30,6 +30,6 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^3.2.3"
   }
 }
