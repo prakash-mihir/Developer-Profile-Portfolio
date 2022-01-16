@@ -9,6 +9,7 @@ import twitterIcon from '../../res/Profile_Icons/iconfinder_2018_social_media_po
 import locationIcon from '../../res/Icons_Illustrations/location_on-24px.svg';
 import blogIcon from '../../res/Icons_Illustrations/insert_link-24px.svg';
 import companyIcon from '../../res/Icons_Illustrations/business-24px.svg';
+import accountIcon from '../../res/Icons_Illustrations/account_circle-24px.svg';
 
 const About = () => {
     const [dev, setDev] = useState([])
@@ -33,7 +34,7 @@ const About = () => {
             {dev[0] ? (
                 <div className='about-container'>
                     <div className='pfp-container'>
-                        <img className='pfp' src={dev[0].avatar_url} alt='avatar'/>
+                        <img className='pfp' src={accountIcon} alt='avatar'/>
                     </div>
                     <div className='info-container'>
                         <div className='name'>{dev[0].name}</div>

@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/workat-hiring-test/static/css/main.c9ab6668.css",
-    "main.js": "/workat-hiring-test/static/js/main.c5c94b7c.js",
+    "main.css": "/workat-hiring-test/static/css/main.863f47c7.css",
+    "main.js": "/workat-hiring-test/static/js/main.1077c289.js",
     "static/js/787.7240e568.chunk.js": "/workat-hiring-test/static/js/787.7240e568.chunk.js",
+    "static/media/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png": "/workat-hiring-test/static/media/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.fa0accc1440b6a70e7b3.png",
+    "static/media/iconfinder_github_317712.png": "/workat-hiring-test/static/media/iconfinder_github_317712.b392be3f24c60d24875b.png",
     "static/media/undraw_dev_productivity_umsq_1.png": "/workat-hiring-test/static/media/undraw_dev_productivity_umsq_1.796486ed916b2fda8ec2.png",
+    "static/media/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.png": "/workat-hiring-test/static/media/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.a705a2bc3f9ad2b93ebf.png",
+    "static/media/iconfinder_160_Hackerrank_logo_logos_4373234.png": "/workat-hiring-test/static/media/iconfinder_160_Hackerrank_logo_logos_4373234.5d8689497ce62711ea41.png",
+    "static/media/iconfinder_Circled_Medium_svg5_5279113.png": "/workat-hiring-test/static/media/iconfinder_Circled_Medium_svg5_5279113.1bcfaf23a6a924b62ab3.png",
     "index.html": "/workat-hiring-test/index.html",
     "static/media/search-24px.svg": "/workat-hiring-test/static/media/search-24px.bc2178ae2f929aec5f0979e09110f358.svg",
     "static/media/account_circle-24px.svg": "/workat-hiring-test/static/media/account_circle-24px.99b6c0a3103b0704d67c.svg",
+    "static/media/insert_link-24px.svg": "/workat-hiring-test/static/media/insert_link-24px.00ac3d8661792003637856a615b265d3.svg",
+    "static/media/business-24px.svg": "/workat-hiring-test/static/media/business-24px.514d33c12ee5d339a67e0e3f228519ec.svg",
+    "static/media/location_on-24px.svg": "/workat-hiring-test/static/media/location_on-24px.56c49cd829e0c2afe443f10407916a03.svg",
     "static/media/north_east-24px.svg": "/workat-hiring-test/static/media/north_east-24px.94737adaae534812c2383259ed39399a.svg",
-    "main.c9ab6668.css.map": "/workat-hiring-test/static/css/main.c9ab6668.css.map",
-    "main.c5c94b7c.js.map": "/workat-hiring-test/static/js/main.c5c94b7c.js.map",
+    "main.863f47c7.css.map": "/workat-hiring-test/static/css/main.863f47c7.css.map",
+    "main.1077c289.js.map": "/workat-hiring-test/static/js/main.1077c289.js.map",
     "787.7240e568.chunk.js.map": "/workat-hiring-test/static/js/787.7240e568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9ab6668.css",
-    "static/js/main.c5c94b7c.js"
+    "static/css/main.863f47c7.css",
+    "static/js/main.1077c289.js"
   ]
 }
