@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/api');
+const path = require('path');
 
+require("dotenv").config()
 const app = express();
 
 const port = process.env.PORT || 5000;
@@ -32,6 +34,13 @@ app.use((err, req, res, next) => {
 });
 
 app.timeout = 0;
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });

@@ -12,7 +12,9 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/workat-hiring-test" element={<Landing />} />
           <Route exact path='/dev/:id' element={<Header />} />
+          <Route exact path='workat-hiring-test/dev/:id' element={<Header />} />
         </Routes>
       </Router>
       <Footer/>
