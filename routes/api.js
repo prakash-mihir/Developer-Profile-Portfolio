@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const Developer = require('../models/developers');
+var path = require('path');
 
 router.get('/', (req, res) => {
     // send the home page
