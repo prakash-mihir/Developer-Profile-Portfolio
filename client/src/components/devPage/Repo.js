@@ -44,6 +44,7 @@ const Repo = () => {
                                 <div className = "repo-item">
                                 <li className='repo-name'>
                                     <a href={repo.html_url} target='_blank' rel='noopener noreferrer'>{repo.name}</a>
+                                    <hr></hr>
                                 </li>
                                 </div>
                             )
