@@ -11,7 +11,7 @@ const App = () => {
       {/* <Landing /> */}
       <Router>
         <Routes>
-          <Route path='/dev/:id' element={<Header />} />
+          <Route path='dev/:id' element={<Header />} />
           <Route path="*" element={<Landing />}/>
         </Routes>
       </Router>
