@@ -27,6 +27,29 @@
   left: 20%;
   top: 79px;
 }
+
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  .landing {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .heading-text{
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .landing-photo{
+    left: 0px;
+    top: 0px;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+  }
+}
+
 /* LANDING CSS ENDS */
 
 /* WELCOME TEXT CSS STARTS */
@@ -40,6 +63,16 @@
   text-align: center;
   color: #3F3D56;
   font-size: 56px;
+}
+
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  .welcome-text {
+    margin: 20px;
+    text-align: center;
+    color: #3F3D56;
+    font-size: 20px;
+  }
 }
 /* WELCOME TEXT CSS ENDS */
 
@@ -59,7 +92,7 @@
 }
 
 .searchBarInput {
-  vertical-align: center;
+  vertical-align: middle;
   padding: 10px 0px 0px 10px;
   height: 100%;
   width: 100%;
@@ -103,6 +136,35 @@
   width: 100%;
 }
 
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  .searchBarContainer {
+    justify-content: left;
+    width: 80%;
+    height: 30px;
+    font-size: 12px;
+  }
+  .searchBarInput {
+    margin-left: 5px;
+    height: 50%;
+    width: 80%;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px 0px 0px 5px;
+  }
+  .searchBarInput input {
+    background: none;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 15px;
+  }
+  .searchBarIcon {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+  }
+}
+
 /* SEARCH BAR CSS ENDS */
 
 /* SEARCH LIST CSS STARTS */
@@ -127,7 +189,7 @@
 #devList li {
   background: url('res/Icons_Illustrations/account_circle-24px.svg') no-repeat left;
   background-size: 100px 100px;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 100px;
   color: #9F8E63;
   height: 100px;
@@ -140,6 +202,41 @@
 #devList a {
   text-decoration: none;
   color: #9F8E63;
+}
+
+/* if the width is smaller than 1250 px */
+@media screen and (max-width: 1250px) {
+  #devList li {
+    background-size: 80px 80px;
+    font-size: 24px;
+    padding-left: 100px;
+  }
+}
+
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  #devListContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #devList {
+    margin-left: 0px;
+  }
+  #devList li {
+    background: url('res/Icons_Illustrations/account_circle-24px.svg') no-repeat left;
+    background-size: 20px 20px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #9F8E63;
+    height: 30px;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .devIcon {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 /* SEARCH LIST CSS ENDS */
@@ -167,6 +264,33 @@
   font-size: 36px;
   display: block;
 }
+
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  .addDevPanel {
+    justify-content: center;
+    text-align:center;
+  }
+  .addDevButton {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+    background: #7C639F;
+    border-radius: 15px;
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .text {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #3F3D56;
+    font-size: 30px;
+    display: block;
+  }
+}
+
 /* ADD DEV PANEL ENDS */
 
 /* FORM CSS STARTS */
@@ -188,11 +312,11 @@
 
 .devForm {
   background-color:rgba(255, 255, 255, 1);
-  position: absolute;
+  position: fixed;
   top: 10%;
   width: 60%;
   margin: auto;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,7 +326,7 @@
 
 .devFormContent {
   margin-left: 80px;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -236,8 +360,7 @@
 
 .formFooter {
   width: 100%;
-  position: absolute;
-  bottom: 140px;
+  position: relative;
 }
 
 #cancel-btn {
@@ -261,6 +384,124 @@
   border-radius: 15px;
   font-family: 'Nunito Sans', sans-serif;
 }
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1180px) {
+  .formTitle {
+    top: 14px;
+    left: 24px;
+    font-size: 16px;
+  }
+  .devFormOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .devForm {
+    background-color:rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    margin: auto;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    text-align: left;
+  }
+  .devFormContent {
+    top: 12%;
+    margin-left: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1;
+    width: 70%;
+  }
+  .devFormContent input {
+    height: 30px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D0CDE1;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .devFormContent label {
+    /* make label go left */
+    position: relative;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #3F3D56;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+  }
+  .formFooter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    margin-left: 40px;
+    top: 50px;
+  }
+  #cancel-btn {
+    position: relative;
+    right: 0px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  #submit-btn {
+    position: relative;
+    color: #FFFFFF;
+    width: 80px;
+    height: 40px;
+    background: #7C639F;
+    border-radius: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+  }
+}
+
+/* if the screen width is less than 1800 and more than 1025 */
+
+
+@media only screen and (min-width: 1025) and (max-width: 1800px) {
+  .formFooter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    margin-left: 40px;
+    top: 50px;
+  }
+  #cancel-btn {
+    position: relative;
+    right: 0px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  #submit-btn {
+    position: relative;
+    color: #FFFFFF;
+    width: 80px;
+    height: 40px;
+    background: #7C639F;
+    border-radius: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+  }
+}
 /* FORM CSS ENDS */
 
 /* FOOTER CSS STARTS */
@@ -271,6 +512,18 @@
   height: 80px;
   line-height: 80px;
   background: #3F3D56;
+}
+
+/* if the width is smaller than 1025 px */
+@media screen and (max-width: 1025px) {
+  .footer {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+    background: #3F3D56;
+  }
 }
 /* FOOTER CSS ENDS */
 
@@ -386,6 +639,50 @@
   text-decoration: none;
 }
 
+/* if the width is smaller than 1080px */
+@media screen and (max-width: 1080px) {
+  .about-container{
+    flex-direction: column;
+  }
+  .pfp-container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .pfp {
+    margin-left: 0px;
+    height: 80%;
+    width: 80%;
+  }
+  .info-container{
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #3F3D56;
+  }
+  .bio {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .info-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .link-text{
+    overflow: wrap;
+    font-size: 10px;
+  }
+}
+
 /* ABOUT PANEL CSS ENDS */
 
 /* REPO PANEL CSS STARTS */
@@ -433,6 +730,22 @@
   line-height: 49px;
   list-style-type: none;
   color: #0768FA;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-container{
+    flex-direction: column;
+  }
+  .repo-title {
+    font-size: 36px;
+    line-height: 33px;
+  }
+  .repo-list {
+    margin-left: 0px;
+  }
+  .repo-name {
+    font-size: 24px;
+  }
 }
 /* REPO PANEL CSS ENDS */
 

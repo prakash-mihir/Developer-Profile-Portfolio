@@ -15,7 +15,7 @@ class ListDev extends Component {
                             <li key={dev._id}>
                                 <a href={`/dev/${github_id}`} target="_blank" rel="noreferrer">
                                 {dev.github_id}
-                                <img src={Arrow} alt="open dev"></img>
+                                <img className='devIcon' src={Arrow} alt="open dev"></img>
                                 </a>
                             </li>
                         );

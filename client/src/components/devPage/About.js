@@ -78,18 +78,18 @@ const About = () => {
                         <div className="link-container">
                             {dev2.location ? (
                                 <div className='link'>
-                                    <img src={locationIcon} alt = 'location icon'></img>
+                                    <img className="info-icon" src={locationIcon} alt = 'location icon'></img>
                                     <div className='link-text'>{dev2.location}</div>
                                 </div>
                             ) : null }
                             {dev2.company ? (
                                 <div className='link'>
-                                    <img src={companyIcon} alt = 'company icon'></img>
+                                    <img className="info-icon" src={companyIcon} alt = 'company icon'></img>
                                     <div className='link-text'>{dev2.company}</div>
                                 </div>) : null }
                             {dev2.blog ? (
                                 <div className='link'>
-                                    <img src={blogIcon} alt = 'blog icon'></img>
+                                    <img className="info-icon" src={blogIcon} alt = 'blog icon'></img>
                                     <div className='link-text'><a href={dev2.blog} target="_blank" rel="noopener noreferrer">{dev2.blog}</a></div>
                                 </div>) : null }
                         </div>

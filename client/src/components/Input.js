@@ -62,8 +62,8 @@ class Input extends Component {
                         onChange={this.handleChange} value={medium_id}
                     />
                 </div>
-                <div className='formFooter'>
                     <hr></hr>
+                <div className='formFooter'>
                     <button id='cancel-btn' onClick={() => this.hide()}>Cancel</button>
                     <button id='submit-btn' onClick={() => this.addDev()}>Add Dev</button>
                 </div>
