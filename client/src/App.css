@@ -555,6 +555,17 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 400px) {
+  .navbar p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+
 /* NAVBAR CSS ENDS */
 
 /* ABOUT PANEL CSS STARTS */
