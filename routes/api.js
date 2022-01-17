@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const Developer = require('../models/developers');
 
-router.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+router.get('/', (req, res) => {
+    // send the home page
+    res.sendFile(__dirname + '/index.html');
 });
 
 router.get('/devs', (req, res, next) => {
