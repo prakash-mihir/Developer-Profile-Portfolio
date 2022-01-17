@@ -13,32 +13,45 @@ import accountIcon from '../../res/Icons_Illustrations/account_circle-24px.svg';
 
 const About = () => {
     const [dev, setDev] = useState([])
-    
+    const [dev2, setDev2] = useState([])
+
     // run only once
     useEffect(() => {
-        console.log("GETTING DEV");
         const github_id = window.location.pathname.slice(5);
         axios
             .get(`/api/devs/search/${github_id}`)
             .then((res) => {
                 if (res.data) {
                     setDev(res.data)
-                    console.log(dev);
                 }
             })
             .catch(console.error);
     }, []) 
+
+    // make a get request to github api
+    useEffect(() => {
+        const github_id = window.location.pathname.slice(5);
+        axios
+            .get(`https://api.github.com/users/${github_id}`)
+            .then((res) => {
+                if (res.data) {
+                    setDev2(res.data)
+                }
+            })
+            .catch(console.error);
+    }, [])
+
     
     return(
         <div>
             {dev[0] ? (
                 <div className='about-container'>
                     <div className='pfp-container'>
-                        <img className='pfp' src={accountIcon} alt='avatar'/>
+                        <img className='pfp' src={dev2.avatar_url} alt='avatar'/>
                     </div>
                     <div className='info-container'>
-                        <div className='name'>{dev[0].name}</div>
-                        <div className='bio'>{dev[0].bio}</div>
+                        <div className='name'>{dev2.name}</div>
+                        <div className='bio'>{dev2.bio}</div>
                         <div className="icon-container">
                             {dev[0].github_id ? (<a href={"https://github.com/" + dev[0].github_id} target="_blank" rel="noopener noreferrer">
                                 <img className='link-icon' src={githubIcon} alt='github icon'/>
@@ -63,21 +76,21 @@ const About = () => {
                             </a>) : null }
                         </div>
                         <div className="link-container">
-                            {dev[0].location ? (
+                            {dev2.location ? (
                                 <div className='link'>
                                     <img src={locationIcon} alt = 'location icon'></img>
-                                    <div className='link-text'>{dev[0].location}</div>
+                                    <div className='link-text'>{dev2.location}</div>
                                 </div>
                             ) : null }
-                            {dev[0].company ? (
+                            {dev2.company ? (
                                 <div className='link'>
                                     <img src={companyIcon} alt = 'company icon'></img>
-                                    <div className='link-text'>{dev[0].company}</div>
+                                    <div className='link-text'>{dev2.company}</div>
                                 </div>) : null }
-                            {dev[0].blog ? (
+                            {dev2.blog ? (
                                 <div className='link'>
                                     <img src={blogIcon} alt = 'blog icon'></img>
-                                    <div className='link-text'><a href={dev[0].blog} target="_blank" rel="noopener noreferrer">{dev[0].blog}</a></div>
+                                    <div className='link-text'><a href={dev2.blog} target="_blank" rel="noopener noreferrer">{dev2.blog}</a></div>
                                 </div>) : null }
                         </div>
                     </div>
