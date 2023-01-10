@@ -6,6 +6,7 @@
   "scripts": {
     "start-watch": "nodemon server.js",
     "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\"",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "cd client && npm run build",
